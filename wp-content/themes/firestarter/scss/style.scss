@@ -1,0 +1,63 @@
+/*!
+Theme Name: Firetoss - FireStarter
+Theme URI: https://github.com/Firetoss-Agency/firestarter
+Author: Firetoss - Developed with: __________
+Author URI: http://firetoss.com/
+Description: A Custom Theme from the Firetoss Agency
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: firestarter
+
+
+If you are seeing this, you are probably trying to learn more about what we do at Firetoss, so,
+here are some additional resources:
+
+*** Our favorite game ***
+  https://goo.gl/3809Zx
+
+*** How we build our themes ***
+  https://goo.gl/cAmcqR
+
+*** Your mother ***
+  https://goo.gl/VhCid4
+
+The FireStarter Theme will hopefully become a composition of those who work here at Firetoss.
+If you are still reading this you are probably a dev so update this lazy message.
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Base
+
+# Vendor
+
+# Modules
+
+
+//@import directory/*
+
+--------------------------------------------------------------*
+
+
+/*--------------------------------------------------------------
+# Vendor
+--------------------------------------------------------------*/
+@import "vendor/main";
+
+
+
+/*--------------------------------------------------------------
+# Theme Base
+--------------------------------------------------------------*/
+@import "base/main";
+
+
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import "layouts/main";
+

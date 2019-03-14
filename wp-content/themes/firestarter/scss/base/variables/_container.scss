@@ -1,0 +1,21 @@
+$breakpoint-phone-sm: 360px;
+$breakpoint-phone: 500px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-tablet: 980px;
+$breakpoint-small-desktop: 1200px;
+$breakpoint-desktop: 1500px;
+
+
+$breakpoint_handle: desktop, desktop-sm, tablet, tablet-sm;
+
+$breakpoint_vars: $breakpoint-desktop, $breakpoint-small-desktop, $breakpoint-tablet, $breakpoint-small-tablet;
+
+$container-max: 1350px;
+$container-sizes: 1100px, 900px, 700px, 100%;
+
+$container-full-max: 1500px;
+$container-full-sizes: 1200px, 980px, 768px, 100%;
+
+$container-narrow-max: 1150px;
+$container-narrow-sizes: 1000px, 820px, 632px, 100%;
+

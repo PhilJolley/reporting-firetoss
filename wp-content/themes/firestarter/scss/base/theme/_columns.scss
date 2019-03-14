@@ -1,0 +1,78 @@
+div#flex {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  .section {
+    padding: 50px 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+
+    &.no-padding {
+      padding: 0;
+
+    }
+    > * {
+      font-size: initial;
+    }
+  }
+}
+
+.row-wrapper {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  &.no-margin {
+    margin: 0 !important;
+  }
+}
+
+
+//padding
+$padding: 25;
+.flex-padding {
+  @for $i from 0 through 3 {
+    &-#{$i} {
+      padding: ($padding * $i)+px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@for $i from 2 through length($columns) {
+
+  .flex-item-#{nth($columns,$i)} {
+
+    @include flex-column(nth($columns, $i), nth($col_space, $i), nth($row_space, $i));
+
+    @include desktop-sm {
+      @include flex-column(nth($columns_desktop, $i), nth($col_space_desktop, $i), nth($row_space_desktop, $i));
+    }
+
+    @include tablet {
+      @include flex-column(nth($columns_tablet, $i), nth($col_space_tablet, $i), nth($row_space_tablet, $i));
+    }
+
+    @include tablet-sm {
+      @include flex-column(nth($columns_mobile, $i), nth($col_space_mobile, $i), nth($row_space_mobile, $i));
+    }
+
+    &.no-margin {
+      @include flex-column(nth($columns, $i), 0, 0);
+
+      @include desktop-sm {
+        @include flex-column(nth($columns_desktop, $i), 0, 0);
+      }
+
+      @include tablet {
+        @include flex-column(nth($columns_desktop, $i), 0, 0);
+      }
+
+      @include tablet-sm {
+        @include flex-column(nth($columns_mobile, $i), 0, 0);
+      }
+    }
+  }
+}
+

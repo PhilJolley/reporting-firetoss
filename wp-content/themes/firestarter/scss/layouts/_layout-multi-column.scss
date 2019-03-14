@@ -1,0 +1,14 @@
+.multi_column-wrapper {
+  @include flex-columns();
+}
+
+.flex-grid {
+  @include flex-columns();
+
+  .flex-item {
+    box-sizing: border-box;
+  }
+}
+
+
+

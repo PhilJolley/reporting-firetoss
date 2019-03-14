@@ -1,0 +1,48 @@
+
+a.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: $button__border;
+  border-radius: $button__border-radius;
+  color: $button__text-color;
+  font-family: $button__font-family;
+  font-weight: $button__font-weight;
+  text-decoration: none;
+  transition: all .22s ease;
+  display: inline-block;
+
+
+  font-size: $button__font-size;
+  padding: $button__padding;
+  background-color: $button__background-color;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &:visited {
+    color:initial;
+  }
+
+  &:hover {
+    //border-color: $button__border__color-hover;
+    //color: $button__text-color-hover;
+    background-color: $button__background-color-hover;
+  }
+
+  &.button-alt {
+
+    font-size: $button_alt__font-size;
+    padding: $button_alt__padding;
+    background-color: $button_alt__background-color;
+
+    &:hover {
+      background-color: $button_alt__background_color_hover;
+    }
+  }
+}
+
+
+

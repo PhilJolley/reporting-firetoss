@@ -1,0 +1,25 @@
+//headings
+$headings:          h1,   h2,   h3,   h4,   h5,   h6;
+$heading_sizes:     56px, 50px, 40px, 30px, 26px, 22px;
+$heading_m_sizes:   46px, 42px, 32px, 24px, 22px, 20px;
+$heading_s_sizes:   34px, 32px, 24px, 20px, 18px, 16px;
+$heading_family: $font_header;
+$heading_color:$color__dark-grey;
+$heading_weight:normal;
+$heading_line-heights: 1.2;
+$heading_margins:20px 0;
+$heading_mobile_margins:10px 0;
+
+
+//p
+$color__text-screen: #21759b;
+$color__text-main: #404040;
+
+$color__link: $heading_color;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+
+$font__size: 16px;
+$font__line-height-body: 1.4;
+$font__line-height-pre: 1.6;

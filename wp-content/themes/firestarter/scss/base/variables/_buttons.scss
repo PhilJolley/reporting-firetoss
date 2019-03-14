@@ -1,0 +1,25 @@
+//$buttons:      button,  light, dark, alt;
+//$button_font_sizes:   20px, 20px,  20px, 16px;
+//$button_font_mobile:  24px, 22px, 20px,  16px;
+//$button_border_width:  2px,   2px, 2px,  1px;
+//$button__border__color-hover: $theme_hex_primary;
+
+
+$button__border: 0;
+$button__font-size: 27px;
+$button__font-family: $font_main;
+$button__font-weight: normal;
+$button__border-radius: 0px;
+$button__padding: 10px 25px;
+
+$button__text-color: #fff;
+$button__text-color-hover: #fff;
+
+$button__background-color: $theme_hex_primary;
+$button__background_color_hover: $theme_hex_secondary;
+
+
+$button_alt__font-size: 20px;
+$button_alt__padding: 5px 20px;
+$button_alt__background-color: $accent_hex_primary;
+$button_alt__background_color_hover: $accent_hex_secondary;

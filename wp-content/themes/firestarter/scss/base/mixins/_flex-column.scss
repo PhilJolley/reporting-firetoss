@@ -1,0 +1,55 @@
+@mixin flex-column($num, $col_spacing:10, $row_spacing:10 ,$offset:0){
+  $width: 100% / $num;
+  $pad: $col_spacing * ($num - 1) / $num * 2;
+
+
+  flex-basis: calc(#{$width} - #{$pad}px);
+  min-width: calc(#{$width} - #{$pad}px);
+  margin: #{$row_spacing / 2}px #{$col_spacing}px;
+
+  &:nth-child(#{$num}n + #{$offset + 1}){
+    margin: #{$row_spacing / 2}px #{$col_spacing}px;
+    margin-left: 0;
+  }
+
+  &:nth-child(#{$num}n + #{$offset}){
+    margin: #{$row_spacing / 2}px #{$col_spacing}px;
+    margin-right: 0;
+  }
+}
+
+@mixin flex-columns(
+  $col_spacing:20 10 0,
+  $row_spacing:20 10 0,
+  $breakpoint: $breakpoint-small-desktop,
+  $breakfull: $breakpoint-small-tablet,
+  $scope:max,
+  $offset:0,
+  $length:5) {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @for $i from 2 to $length {
+
+     &--#{$i} .flex-item {
+      @include flex-column($i, nth($col_spacing, 1),  nth($row_spacing, 1), $offset);
+
+      @include media_q($breakpoint, $scope ) {
+
+        @if ($i % 2 != 0) and ($i > 1) {
+
+          @include flex-column((($i - 1)/2),  nth($col_spacing, 2), nth($row_spacing, 2), $offset);
+        }
+        @if ($i % 2 == 0) and ($i > 2) {
+
+          @include flex-column(($i/2), nth($col_spacing, 2),  nth($row_spacing, 2), $offset);
+        }
+      }
+      @include media_q($breakfull, max ) {
+
+        @include flex-column(1, nth($col_spacing, 3), nth($row_spacing, 3), $offset);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+
+.layout-text_block {
+  p {
+    color: inherit;
+  }
+  &.small p {
+    font-size: 80%;
+  }
+  &.large p {
+    font-size: 120%;
+  }
+}
+

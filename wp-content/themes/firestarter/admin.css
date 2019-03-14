@@ -1,0 +1,15 @@
+/********************************
+user-restrictions
+********************************/
+/********************************
+Editor
+********************************/
+.role-editor #wpwrap .acf-js-tooltip,
+.role-editor #wpwrap .acf-actions {
+  display: none !important;
+  visibility: hidden !important; }
+
+.role-editor #wpwrap .acf-fields > .acf-tab-wrap .acf-tab-group li a.acf-tab-button[data-key="field_5a4408be8207f"],
+.role-editor #wpwrap .acf-fields > .acf-tab-wrap .acf-tab-group li a.acf-tab-button[data-key="field_5a44059694b60"] {
+  display: none !important;
+  visibility: hidden !important; }

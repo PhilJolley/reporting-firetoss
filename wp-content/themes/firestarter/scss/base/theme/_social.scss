@@ -1,0 +1,22 @@
+
+$social_media: facebook, flickr, foursquare, google, instagram, linkedin, tumblr, twitter, vimeo, youtube;
+$social_colors: #3B5998, #FE0883, #8FD400, #C63D2D, #4E433C, #4875B4, #2B4964, #33CCFF, #86B32D, #FF3333;
+
+ul.social-media-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  li {
+    a {
+      text-decoration: none;
+      i {
+        transition: all .35s ease;
+        @each $social in $social_media {
+          $index: index($social_media, $social);
+          &.fa-#{$social}:hover {
+            background: nth($social_colors, $index);
+          }
+        }
+      }
+    }
+  }
+}

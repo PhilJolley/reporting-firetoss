@@ -1,0 +1,11 @@
+.layout-banner .banner-wrapper {
+  padding-left: 65%;
+  padding-top: 16%;
+  padding-bottom: 35px;
+}
+
+
+@include media_q($breakpoint-desktop, 'min') {
+  .layout-banner[style*="background"][style*="contain"] {
+    background-size: initial !important;}
+}

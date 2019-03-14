@@ -1,0 +1,39 @@
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+
+  @each $breakpoint in $breakpoint_vars {
+    $index: index($breakpoint_vars, $breakpoint);
+
+    @media screen and (max-width: $breakpoint) {
+      max-width: nth($container-sizes, $index);
+    }
+  }
+  @include tablet-sm {
+    padding: 0 20px;
+  }
+
+  &.container-full {
+    max-width: $container-full-max;
+
+    @each $breakpoint in $breakpoint_vars {
+      $index: index($breakpoint_vars, $breakpoint);
+
+      @media screen and (max-width: $breakpoint) {
+        max-width: nth($container-full-sizes, $index);
+      }
+    }
+  }
+
+  &.container-narrow {
+    max-width: $container-narrow-max;
+
+    @each $breakpoint in $breakpoint_vars {
+      $index: index($breakpoint_vars, $breakpoint);
+
+      @media screen and (max-width: $breakpoint) {
+        max-width: nth($container-narrow-sizes, $index);
+      }
+    }
+  }
+}

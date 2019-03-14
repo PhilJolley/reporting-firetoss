@@ -1,0 +1,27 @@
+
+@each $name in $headings {
+
+  $index:  index($headings, $name);
+
+  .#{$name},
+  #{$name}{
+    font-size: nth($heading_sizes, $index);
+    font-family:$heading_family;
+    font-weight: $heading_weight;
+    color: $heading_color;
+    line-height: $heading_line-heights;
+    margin: $heading_margins;
+    &.no-margin {
+      margin:0;
+    }
+    @include desktop-sm {
+      font-size: nth($heading_m_sizes, $index);
+    }
+
+    @include tablet-sm {
+      font-size: nth($heading_s_sizes, $index);
+      margin: $heading_mobile_margins;
+    }
+  }
+}
+

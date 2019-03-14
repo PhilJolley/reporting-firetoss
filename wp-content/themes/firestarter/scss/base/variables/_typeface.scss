@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url("https://use.typekit.net/bah6cvm.css");
+
+@font-face {
+  font-family: "Bebas";
+  font-weight: 100;
+  src: url("fonts/BebasNeue Thin.ttf"); }
+@font-face {
+  font-family: "Bebas";
+  font-weight: 300;
+  src: url("fonts/BebasNeue Light.ttf"); }
+@font-face {
+  font-family: "Bebas";
+  font-weight: 400;
+  src: url("fonts/BebasNeue Regular.ttf"); }
+@font-face {
+  font-family: "Bebas";
+  font-weight: 600;
+  src: url("fonts/BebasNeue Bold.ttf"); }
+
+
+$font_main:"myriad-pro", 'Open sans', sans-serif;
+$font_header: "Bebas",'Open sans', sans-serif;
+
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+
+

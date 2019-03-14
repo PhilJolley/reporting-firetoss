@@ -1,0 +1,18 @@
+
+.ft_section.layout-two_column {
+  padding: 0;
+}
+
+@include tablet-sm {
+  .flex-grid--custom {
+    flex-direction: column;
+
+    .flex-item[style*="flex-basis"]:empty {
+      min-height: 250px;
+      order: -1;
+      /* background-size: contain !important; */
+      /* flex-grow: 0; */
+    }
+  }
+}
+
