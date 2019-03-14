@@ -3,7 +3,7 @@
 
 function custom_styles()
 {
-    wp_register_style('style', get_template_directory_uri() . '/style.css', false, false, 'all');
+    wp_register_style('style', get_template_directory_uri() . '/style/style.css', false, false, 'all');
     wp_enqueue_style('style');
 
 }
