@@ -25,7 +25,7 @@ $user_id = $current_user->ID;
         $logo = get_field('logo', 'user_'.$user_id.'');
         $size = 'thumbnail';
         ?>
-        <img src="<?= $logo; ?>">
+        <img src="<?= $logo; ?>" alt="Firetoss Analytics">
     </div>
     <div id="btn-row" class="btn-group">
     <?php
